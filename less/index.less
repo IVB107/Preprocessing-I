@@ -23,6 +23,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -54,6 +55,59 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	font-size: 62.5%;
+}
+html {
+    background-color: @yellow;
 }
 
+// Variables
+
+// Color Palette
+@blue: #395493;
+@purple: #5D6F9B;
+@teal: #80AAAA;
+@green: #96C487;
+@yellow: #DEE886;
+
+// Mixins
+
+.center() {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.border() {
+	border: 2px solid black;
+	padding: 20px;
+	margin: 0 auto;
+}
+
+// General Styles
+
+.main-container {
+	max-width: 900px;
+	.border;
+}
+
+header {
+	.center;
+	justify-content: space-between;
+
+	h1 {
+		font-size: 2.8rem;
+	}
+
+	nav {
+		display: flex;
+		width: 50%;
+		justify-content: space-evenly;
+		a {
+			font-size: 1.6rem;
+			text-decoration: none;
+			color: black;
+		}
+	}
+}
