@@ -147,53 +147,71 @@ section {
   padding: 20px;
   margin: 0 auto;
   background-color: white;
-  margin: 10px auto;
-  width: 49%;
-}
-.main-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  width: 100%;
+  margin: 10px auto;
+  width: 49%;
+}
+section p {
+  font-size: 1.4rem;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
   border: 2px solid black;
   padding: 20px;
   margin: 0 auto;
   background-color: white;
-  background-color: #6F82B0;
+  background-color: #C0DDAD;
   max-width: 900px;
 }
-.main-container header {
+.container header {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   justify-content: space-between;
 }
-.main-container header nav {
+.container header nav {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  width: 100%;
+  width: 25%;
   justify-content: space-evenly;
 }
-.main-container header nav a {
+.container header nav a {
   font-size: 1.6rem;
   text-decoration: none;
   color: black;
   margin: 2px 0;
   transition: 0.1s ease;
 }
-.main-container header nav a:hover {
+.container header nav a:hover {
   color: white;
   transition: 0.1s ease;
 }
 main {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   width: 100%;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+main section {
+  width: 100%;
+}
+main section .line-break {
+  margin: 10px 0 20px;
 }
 @media (max-width: 500px) {
   main {
@@ -201,11 +219,6 @@ main {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-  }
-  main section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
   }
 }

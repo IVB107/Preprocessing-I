@@ -60,13 +60,13 @@ html, body {
 }
 
 // Variables
-
 // Color Palette
 @blue: #6F82B0;
+@light-blue: #BDC6DB;
 @purple: #9191BB;
 @teal: #97B9B9;
 @green: #96C487;
-@yellow: #DEE886;
+@yellow: #E5EFB1;
 
 // Mixins
 
@@ -81,6 +81,7 @@ html, body {
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: flex-start;
+	width: 100%;
 }
 
 .box() {
@@ -102,18 +103,22 @@ h2 {
 
 section {
 	.box;
+	.column;
 	margin: 10px auto;
 	width: 49%;
-	// min-width: 400px;
-	// flex-grow: 1;
+	// background-color: @yellow;
+
+	p {
+		font-size: 1.4rem;
+	}
 }
 
 // Main
 
-.main-container {
+.container {
 	.column;
 	.box;
-	background-color: @blue;
+	background-color: #C0DDAD;
 	max-width: 900px;
 
 	header {
@@ -122,6 +127,7 @@ section {
 
 		nav {
 			.column;
+			width: 25%;
 			justify-content: space-evenly;
 
 			a {
@@ -141,21 +147,27 @@ section {
 }
 
 main {
-	.center;
+	// .center;
+	.column;
 	justify-content: space-between;
 	flex-wrap: wrap;
+
+	section {
+		width: 100%;
+
+		.line-break {
+			margin: 10px 0 20px;
+		}
+	}
 
 	@media (max-width: 500px) {
 		.column;
 
-		section {
-			.center;
-		}
 	}
 
 
 	.contact {
-
+		
 	}
 	.skills {
 
