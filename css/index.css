@@ -140,7 +140,7 @@ h1 {
   font-size: 3.2rem;
 }
 h2 {
-  font-size: 2.4rem;
+  font-size: 2rem;
 }
 section {
   border: 2px solid black;
@@ -157,6 +157,10 @@ section {
 }
 section p {
   font-size: 1.4rem;
+}
+section a {
+  text-decoration: none;
+  color: #688BC4;
 }
 .container {
   display: flex;
@@ -216,11 +220,11 @@ section p {
 }
 .contact li a {
   color: black;
-  transition: 0.2s ease;
+  transition: 0.1s ease;
 }
 .contact li:hover a {
   color: white;
-  transition: 0.2s ease;
+  transition: 0.1s ease;
 }
 main {
   display: flex;
@@ -234,8 +238,10 @@ main {
 main section {
   width: 100%;
 }
-main section .line-break {
+main section .line {
   margin: 10px 0 20px;
+  width: 100%;
+  border-top: 1px solid black;
 }
 @media (max-width: 500px) {
   main {
@@ -250,6 +256,7 @@ main .skills ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
   width: 100%;
   font-size: 1.4rem;

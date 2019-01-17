@@ -61,7 +61,7 @@ html, body {
 
 // Variables
 // Color Palette
-@blue: #6F82B0;
+@blue: #688BC4;
 @light-blue: #BDC6DB;
 @purple: #9191BB;
 @teal: #97B9B9;
@@ -94,7 +94,7 @@ h1 {
 	font-size: 3.2rem;
 }
 h2 {
-	font-size: 2.4rem;
+	font-size: 2rem;
 }
 section {
 	.box;
@@ -104,6 +104,11 @@ section {
 
 	p {
 		font-size: 1.4rem;
+	}
+
+	a {
+		text-decoration: none;
+		color: @blue;
 	}
 }
 
@@ -155,7 +160,7 @@ section {
 
 			a {
 				color: black;
-				transition: .2s ease;
+				transition: .1s ease;
 			}
 		}
 
@@ -163,7 +168,7 @@ section {
 
 			a {
 				color: white;
-				transition: .2s ease;
+				transition: .1s ease;
 			}
 		}
 }
@@ -176,8 +181,10 @@ main {
 	section {
 		width: 100%;
 
-		.line-break {
+		.line {
 			margin: 10px 0 20px;
+			width: 100%;
+			border-top: 1px solid black;
 		}
 	}
 
@@ -193,6 +200,7 @@ main {
 	.skills {
 		ul {
 			.center;
+			justify-content: flex-start;
 			flex-wrap: wrap;
 			width: 100%;
 			font-size: 1.4rem;
