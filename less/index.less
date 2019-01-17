@@ -69,7 +69,6 @@ html, body {
 @yellow: #E5EFB1;
 
 // Mixins
-
 .center() {
 	display: flex;
 	justify-content: center;
@@ -83,7 +82,6 @@ html, body {
 	align-items: flex-start;
 	width: 100%;
 }
-
 .box() {
 	border: 2px solid black;
 	padding: 20px;
@@ -92,29 +90,24 @@ html, body {
 }
 
 // General Styles
-
 h1 {
 	font-size: 3.2rem;
 }
-
 h2 {
 	font-size: 2.4rem;
 }
-
 section {
 	.box;
 	.column;
 	margin: 10px auto;
 	width: 49%;
-	// background-color: @yellow;
 
 	p {
 		font-size: 1.4rem;
 	}
 }
 
-// Main
-
+// Main Content
 .container {
 	.column;
 	.box;
@@ -156,10 +149,26 @@ section {
 	.center;
 	justify-content: space-evenly;
 	font-size: 1.4rem;
+
+		li {
+			font-size: 3rem;
+
+			a {
+				color: black;
+				transition: .2s ease;
+			}
+		}
+
+		li:hover {
+
+			a {
+				color: white;
+				transition: .2s ease;
+			}
+		}
 }
 
 main {
-	// .center;
 	.column;
 	justify-content: space-between;
 	flex-wrap: wrap;
@@ -177,7 +186,7 @@ main {
 
 	}
 
-
+	// Section containers
 	.about {
 		
 	}

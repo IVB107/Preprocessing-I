@@ -211,6 +211,17 @@ section p {
   justify-content: space-evenly;
   font-size: 1.4rem;
 }
+.contact li {
+  font-size: 3rem;
+}
+.contact li a {
+  color: black;
+  transition: 0.2s ease;
+}
+.contact li:hover a {
+  color: white;
+  transition: 0.2s ease;
+}
 main {
   display: flex;
   flex-direction: column;
