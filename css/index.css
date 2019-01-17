@@ -198,6 +198,19 @@ section p {
   color: white;
   transition: 0.1s ease;
 }
+.container .line-break {
+  width: 100%;
+  margin: 20px auto;
+  border-top: 1px solid black;
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: space-evenly;
+  font-size: 1.4rem;
+}
 main {
   display: flex;
   flex-direction: column;
@@ -222,8 +235,16 @@ main section .line-break {
     width: 100%;
   }
 }
-.line-break {
+main .skills ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   width: 100%;
-  margin: 20px auto;
-  border-top: 1px solid black;
+  font-size: 1.4rem;
+}
+main .skills ul li {
+  width: 20%;
+  justify-self: flex-start;
+  margin: 5px 0;
 }
