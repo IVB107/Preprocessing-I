@@ -74,6 +74,7 @@ html, body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: 100%;
 }
 .column() {
 	display: flex;
@@ -82,43 +83,88 @@ html, body {
 	align-items: flex-start;
 }
 
-.border() {
+.box() {
 	border: 2px solid black;
 	padding: 20px;
 	margin: 0 auto;
+	background-color: white;
 }
 
 // General Styles
 
-.main-container {
-	background-color: @blue;
-	max-width: 900px;
-	.border;
+h1 {
+	font-size: 3.2rem;
 }
 
-header {
+h2 {
+	font-size: 2.4rem;
+}
+
+section {
+	.box;
+	margin: 10px auto;
+	width: 49%;
+	// min-width: 400px;
+	// flex-grow: 1;
+}
+
+// Main
+
+.main-container {
+	.column;
+	.box;
+	background-color: @blue;
+	max-width: 900px;
+
+	header {
+		.center;
+		justify-content: space-between;
+
+		nav {
+			.column;
+			justify-content: space-evenly;
+
+			a {
+				font-size: 1.6rem;
+				text-decoration: none;
+				color: black;
+				margin: 2px 0;
+				transition: .1s ease;
+			}
+
+			a:hover {
+				color: white;
+				transition: .1s ease;
+			}
+		}
+	}
+}
+
+main {
 	.center;
 	justify-content: space-between;
+	flex-wrap: wrap;
 
-	h1 {
-		font-size: 3.2rem;
+	@media (max-width: 500px) {
+		.column;
+
+		section {
+			.center;
+		}
 	}
 
-	nav {
-		.column;
-		// width: 50%;
-		justify-content: space-evenly;
-		a {
-			font-size: 1.6rem;
-			text-decoration: none;
-			color: black;
-			margin: 2px 0;
-			transition: .1s ease;
-		}
-		a:hover {
-			color: white;
-			transition: .1s ease;
-		}
+
+	.contact {
+
+	}
+	.skills {
+
+	}
+	.experience {
+
+	}
+	.interests {
+
 	}
 }
 
